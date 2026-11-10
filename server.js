@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-console.log('MongoDB URI:', process.env.MONGODB_URI.replace(/\/\/([^:]+):([^@]+)@/, '//$1:****@'));
 const app = require('./src/app');
 const connectDB = require('./src/config/db');
 
